@@ -63,3 +63,17 @@ main {
 .die--held {
   background: #59e391;
 }
+
+.title {
+  font-weight: bold;
+  font-size: 5rem;
+  line-height: 3rem;
+  color: #2b283a;
+}
+
+.instructions {
+  font-size: 2rem;
+  line-height: 2rem;
+  letter-spacing: -0.03em;
+  color: #4a4e74;
+}
