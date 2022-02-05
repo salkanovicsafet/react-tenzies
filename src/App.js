@@ -4,6 +4,10 @@ import { useState } from "react";
 export default function App() {
   const [dice, setDice] = useState(allNewDice);
 
+  function handleClick() {
+    setDice(allNewDice());
+  }
+
   function allNewDice() {
     const newDice = [];
     for (let i = 0; i < 10; i++) {
@@ -17,6 +21,9 @@ export default function App() {
   return (
     <main>
       <div className="dice">{diceElements}</div>
+      <button onClick={handleClick} className="roll--btn">
+        Roll
+      </button>
     </main>
   );
 }
